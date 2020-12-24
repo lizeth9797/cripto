@@ -10,16 +10,27 @@ import { HttpClient } from '@angular/common/http';
 })
 export class Tab1Page {
 
+  criptomonedas: any = [];
+  number: string;
+
   constructor(private http: HttpClient) {}
 
-  criptomonedas: any = [];
 
   runHttp(){
     this.http.get('https://api.bitso.com/v3/available_books/')
       .subscribe(data=> {
+        this.criptomonedas = data as string[];
         console.log(data);
-        this.criptomonedas = data;
       })
   }
 
+
+  formula(){
+    
+    // this.number=this.number+100;
+    console.log(this.number);
+  }
+
+
 }
+ 
