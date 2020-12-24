@@ -11,7 +11,8 @@ import { HttpClient } from '@angular/common/http';
 export class Tab1Page {
 
   criptomonedas: any = [];
-  number: string;
+  numero;
+  resultado;
 
   constructor(private http: HttpClient) {}
 
@@ -26,9 +27,9 @@ export class Tab1Page {
 
 
   formula(){
-    
-    // this.number=this.number+100;
-    console.log(this.number);
+
+    this.resultado=parseInt(this.numero+100);
+    console.log(this.resultado);
   }
 
 

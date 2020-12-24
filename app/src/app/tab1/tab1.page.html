@@ -13,14 +13,21 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-item>
-    <ion-label floating>Pesos a Bitcoins:</ion-label>
-    <ion-input type="number" value=number placeholder="Ingrese cantidad"  ></ion-input>
-  </ion-item>
+ 
 
   <!-- Botón de cálculo-->
+  <ion-item>
+    <ion-label floating>Pesos a Bitcoins:</ion-label>
+    <ion-input type="number" [(ngModel)]= "numero" value=numero placeholder="Ingrese cantidad"  ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Resultado: <span class="resultado">{{resultado}}</span></ion-label>
+  </ion-item>
+
   <ion-button (click)="formula()">Calcular</ion-button>
 
+  
 
 
 
