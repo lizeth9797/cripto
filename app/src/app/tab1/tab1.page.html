@@ -34,9 +34,8 @@
   <ion-button (click)="runHttp()">Traer Datos</ion-button>
   <ion-list *ngFor="let criptomoneda of criptomonedas">
     <ion-item>
-      <h5>Moneda: {{ criptomoneda.payload/book }}</h5> &nbsp; &nbsp; <h5>Valor: {{ criptomoneda.payload/maximum_value }}</h5>
+      <h5>Moneda: {{ criptomoneda.moneda }}</h5> &nbsp; &nbsp; <h5>Valor: {{ criptomoneda.valor }}</h5>
     </ion-item>
   </ion-list>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  
 </ion-content>

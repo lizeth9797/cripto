@@ -18,7 +18,7 @@ export class Tab1Page {
 
 
   runHttp(){
-    this.http.get('https://api.bitso.com/v3/available_books/')
+    this.http.get('https://demo5021231.mockable.io/')
       .subscribe(data=> {
         this.criptomonedas = data as string[];
         console.log(data);
